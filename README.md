@@ -1,7 +1,8 @@
 # Connect Basic Demo
 
-This is a basic server application that consumes audio from Twilio Media Streams and save the audio to file
-This is using a library from https://github.com/jremi/twilio-media-stream-save-audio-file, if you want to write your own logic you can refer to this / https://stackoverflow.com/questions/58439005/is-there-any-way-to-save-mulaw-audio-stream-from-twilio-in-a-file
+This is a basic server application that consumes audio from Twilio Media Streams and save the audio to file.
+
+This is using a library from https://github.com/jremi/twilio-media-stream-save-audio-file, if you want to write your own logic you can also refer to this https://stackoverflow.com/questions/58439005/is-there-any-way-to-save-mulaw-audio-stream-from-twilio-in-a-file
 
 
 ## Setup
