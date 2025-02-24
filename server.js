@@ -10,6 +10,8 @@ const app = express();
 const server = http.createServer(app);
 const wss = new Server({ server });
 
+const SERVER_URL = "d254a78a65fc.ngrok.app";
+
 const mediaStreamSaver = new TwilioMediaStreamSaveAudioFile({
   saveLocation: __dirname,
   saveFilename: "my-twilio-media-stream-output",
@@ -25,10 +27,10 @@ const mediaStreamSaver = new TwilioMediaStreamSaveAudioFile({
     twiml.say("Hello! Welcome to to this test call. Please say something");
     
     twiml.connect().stream({
-        url: `wss://f5ae5a6a182d.ngrok.app/`
+        url: `wss://`+SERVER_URL+`/`
     });
 
-    console.log("🛠️ Twilio Stream URL:");
+    console.log("🛠️ Twilio Stream URL:" + SERVER_URL);
     
     res.type('text/xml').send(twiml.toString());
   });
