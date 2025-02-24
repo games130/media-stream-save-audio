@@ -17,6 +17,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "express": "^4.21.2",
     "twilio": "^5.4.5",
     "twilio-media-stream-save-audio-file": "^0.0.4",
     "ws": "^8.18.1"
